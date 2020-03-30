@@ -121,3 +121,55 @@ button {
 .btn_border_underline:focus::before {
   transform: scale(1);
 }
+
+/* search btn */
+.search_box {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  height: 52px;
+  border-radius: 40px;
+}
+.search_txt {
+  height: 52px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: 10px;
+  border-radius: 40px;
+  color: white;
+  outline: none;
+  border: none;
+  transition: all ease .6s;
+  background-color: transparent;
+}
+.search_txt:focus {
+  width: 320px;
+  background-color: brown;
+}
+.search_box:hover .search_txt{
+  width: 320px;
+  background-color: brown;
+}
+input[type="search"]::-webkit-input-placeholder {
+  color: rgb(82, 51, 51);
+  font-size: 18px;
+}
+input[type="search"]::-moz-placeholder {
+color: rgb(82, 51, 51);
+font-size: 18px;
+}
+.fa-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  background-color: teal;
+  border: yellow 2px solid;
+  border-radius: 40px;
+  text-align: center;
+  padding-top: 15px;
+  cursor: pointer;
+}
