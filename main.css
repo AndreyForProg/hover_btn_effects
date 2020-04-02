@@ -5,7 +5,7 @@
 body {
   margin: 0;
   height: 100vh;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -15,6 +15,9 @@ button {
   margin: 1rem;
 }
 
+.buttons {
+  text-align: center;
+}
 .btn {
   background-color: var(--background_color);
   color: #222;
@@ -172,4 +175,35 @@ font-size: 18px;
   text-align: center;
   padding-top: 15px;
   cursor: pointer;
+}
+
+/* skils */
+.skils li {
+  list-style: none;
+  width: 200px;
+  height: 4px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 4px 0px rgba(93, 151, 228, 0.75);
+}
+.html {
+  width: 50%;
+  height: 100%;
+  background-color: indianred;
+  transform-origin: left;
+  animation: skils 1s;
+}
+.css {
+  width: 80%;
+  height: 100%;
+  background-color: indianred;
+  transform-origin: left;
+  animation: skils 1s;
+}
+@keyframes skils {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(100%);
+  }
 }
